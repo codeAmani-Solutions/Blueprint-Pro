@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Prompt Engineer's Blueprint | Interactive AI Guide</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1D4ED8', // Darker Blue for CTAs
+                        'secondary-indigo': '#4F46E5', // Indigo for accent
+                        'accent-yellow': '#FBBF24', // Yellow for highlights
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Font Import (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom scroll behavior and hero background */
+        html { scroll-behavior: smooth; }
+        .hero-background {
+            background: linear-gradient(180deg, rgba(238, 242, 255, 0.8) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #4F46E5, #1D4ED8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+    <!-- Sticky Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="text-xl font-extrabold text-secondary-indigo">Blueprint Pro</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-sm font-medium hover:text-primary-blue transition-colors">Features</a>
+                <a href="#templates" class="text-sm font-medium hover:text-primary-blue transition-colors">Templates</a>
+                <a href="#author" class="text-sm font-medium hover:text-primary-blue transition-colors">Author</a>
+            </nav>
+            <a href="#cta-main" class="px-4 py-2 bg-primary-blue text-white text-sm font-bold rounded-xl shadow-lg hover:bg-secondary-indigo transition-all duration-300">
+                Get Instant Access
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section (Value Proposition) -->
+    <section class="hero-background pt-16 pb-24 text-center">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-6xl sm:text-7xl font-extrabold mb-4 leading-tight">
+                Stop Guessing. <span class="text-gradient">Start Executing.</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                Unlock the power of AI with **The Prompt Engineer's Blueprint**, the only interactive guide built to transform you from a beginner into an AI execution expert.
+            </p>
+            
+            <!-- Main CTA -->
+            <a href="#pricing" id="cta-main" class="inline-block px-10 py-4 bg-accent-yellow text-primary-blue text-xl font-bold rounded-2xl shadow-2xl shadow-yellow-300 transform hover:scale-105 transition-all duration-300 ease-in-out">
+                Secure Your Lifetime Access — $79
+            </a>
+
+            <!-- Image/Mockup of the Dynamic Ebook -->
+            <div class="mt-16 shadow-2xl rounded-2xl overflow-hidden border-8 border-white bg-white">
+                <img src="https://placehold.co/1200x600/1D4ED8/FFFFFF?text=Interactive+Ebook+App+Mockup+%7C+Live+Templates" 
+                     alt="Mockup of the interactive web-based Ebook application with navigation bar visible"
+                     class="w-full h-auto object-cover rounded-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/1200x600/4F46E5/FFFFFF?text=Dynamic+Prompt+Blueprint+Interface';">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Features Section (Why the Web Version is Better) -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center text-secondary-indigo mb-16">Why This Is the Last AI Guide You'll Buy</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1: Live, Copy-Paste Templates -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-primary-blue">
+                    <div class="text-3xl text-primary-blue mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold mb-3">Live, Copy-Paste Templates</h3>
+                    <p class="text-gray-600">Stop manually retyping. Instantly copy high-fidelity **JSON** schemas, **Step-by-Step** prompts, and **Debugging** code blocks (Chapters 5 & 8) directly into your AI chat.</p>
+                </div>
+
+                <!-- Feature 2: A Living, Always-Updated Guide -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-secondary-indigo">
+                    <div class="text-3xl text-secondary-indigo mb-4">🔄</div>
+                    <h3 class="text-2xl font-bold mb-3">A Living, Always-Updated Guide</h3>
+                    <p class="text-gray-600">The AI world changes daily. Your purchase grants you lifetime access to all future updates, new templates, and compatibility fixes—no more outdated PDFs!</p>
+                </div>
+
+                <!-- Feature 3: Interactive Practice Lab -->
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-accent-yellow">
+                    <div class="text-3xl text-accent-yellow mb-4">🧪</div>
+                    <h3 class="text-2xl font-bold mb-3">Interactive Practice Lab</h3>
+                    <p class="text-gray-600">Master the 4 C's with the hands-on Practice Lab (Chapter 9). Track your progress and use the integrated **Evaluation Rubrics** (Chapter 13) to score your prompt quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Testimonial / Credibility -->
+    <section class="py-16 bg-primary-blue text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-3xl italic font-light mb-6">
+                "The **4 C's** structure fundamentally changed how I approach large research tasks. It turned hours of work into 15 minutes."
+            </p>
+            <p class="text-lg font-semibold border-t border-blue-300 pt-4">
+                — Sarah K., Content Director
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. Templates Highlight (Focus on Specific Value) -->
+    <section id="templates" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-secondary-indigo">Inside the Blueprint: Proven Prompt Formulas</h2>
+                <p class="text-xl text-gray-600 mt-3">Immediately unlock frameworks that generate reliable results.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Template 1: The Debug Prompt -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-green-500">
+                    <h3 class="text-2xl font-bold mb-3 text-green-700">The Debug Prompt (Chapter 8)</h3>
+                    <p class="text-gray-600 mb-4">Fix errors and force self-correction. Never accept a bad AI output again—make the AI review its own work and fix its mistakes.</p>
+                    <div class="bg-gray-100 p-3 rounded-lg font-mono text-sm text-gray-800 border">
+                        <span class="text-green-600">Task:</span> Draft a response.<br>
+                        <span class="text-green-600">Then:</span> Compare it to the requested format and list all mismatches.<br>
+                        <span class="text-green-600">Finally:</span> Present ONLY the corrected, final version.
+                    </div>
+                </div>
+
+                <!-- Template 2: Structured JSON -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-orange-500">
+                    <h3 class="text-2xl font-bold mb-3 text-orange-700">Structured JSON Workflow (Chapter 5)</h3>
+                    <p class="text-gray-600 mb-4">For developers and analysts. Generate clean, predictable, and machine-readable data outputs every time, eliminating manual data cleaning.</p>
+                    <div class="bg-gray-800 p-3 rounded-lg font-mono text-sm text-white border">
+                        <span class="text-orange-300">"output_schema": {</span><br>
+                        &nbsp;&nbsp;<span class="text-orange-300">"title": "string",</span><br>
+                        &nbsp;&nbsp;<span class="text-orange-300">"key_points": ["string"]</span><br>
+                        <span class="text-orange-300">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Author Bio & Final CTA -->
+    <section id="author" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-primary-blue mb-8">Authored by Barnabas Waweru</h2>
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/120x120/4F46E5/FFFFFF/png?text=B.W." 
+                     alt="Author Barnabas Waweru" 
+                     class="rounded-full w-32 h-32 object-cover mb-6 shadow-xl"
+                     onerror="this.onerror=null; this.src='https://placehold.co/120x120/4F46E5/FFFFFF/png?text=B.W.';">
+                <p class="text-lg text-gray-600 max-w-2xl">
+                    Barnabas Waweru is a seasoned AI researcher and educator dedicated to demystifying complex technology. He created the Blueprint to move users beyond simple queries and turn them into efficient, powerful prompt engineers.
+                </p>
+            </div>
+            
+            <!-- Final CTA Block -->
+            <div id="pricing" class="mt-12 p-8 bg-secondary-indigo rounded-3xl shadow-2xl">
+                <h3 class="text-3xl font-extrabold text-white mb-3">Ready to Stop Wasting AI Capacity?</h3>
+                <p class="text-xl text-indigo-200 mb-6">Get the ultimate interactive learning platform today.</p>
+                <a href="#cta-main" class="inline-block px-12 py-4 bg-accent-yellow text-primary-blue text-xl font-bold rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    Get Lifetime Access Now ($79)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 The Prompt Engineer's Blueprint by Barnabas Waweru. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
